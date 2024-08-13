@@ -16,4 +16,4 @@ crispy-bootstrap5==2024.2  # https://github.com/django-crispy-forms/crispy-boots
 django-redis==5.4.0  # https://github.com/jazzband/django-redis
 
 FRAME @ git+https://github.com/Agwebberley/FRAME.git@main
-django-htmx==1.18.0
+django-htmx==1.19.0
