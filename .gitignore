@@ -274,3 +274,7 @@ dump.rdb
 frame_template/media/
 
 .pytest_cache/
+
+stdout
+
+pyrightconfig.json

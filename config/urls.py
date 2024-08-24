@@ -7,7 +7,6 @@ from django.urls import path
 from django.views import defaults as default_views
 from django.views.generic import TemplateView
 from frame.urls import urlpatterns as frame_urlpatterns
-from frame_template.Customers.urls import urlpatterns as customer_urls
 
 urlpatterns = [
     path(
@@ -26,7 +25,6 @@ urlpatterns = [
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
     # Frame URLs
     path("", include(frame_urlpatterns)),
-    path("customers/", include(customer_urls)),
 ]
 
 
