@@ -90,6 +90,8 @@ THIRD_PARTY_APPS = [
 
 CUSTOM_APPS = [
     "frame",
+    "customers",
+    "inventory",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
