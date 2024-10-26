@@ -8,7 +8,8 @@ from django.views import defaults as default_views
 from django.views.generic import TemplateView
 from frame.urls import urlpatterns as frame_urlpatterns
 from frame_template.customers.urls import urlpatterns as customer_urls
-from frame_template.inventory.urls import urlpatterns as inventory_urls
+from frame_template.order.urls import urlpatterns as order_urls
+from frame_template.part.urls import urlpatterns as part_urls
 
 urlpatterns = [
     path(
@@ -27,8 +28,9 @@ urlpatterns = [
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
     # Frame URLs
     path("", include(frame_urlpatterns)),
-    path("customers/", include(customer_urls)),
-    path("inventory/", include(inventory_urls)),
+    path("customers/", include(customer_urls), name="customers"),
+    path("orders/", include(order_urls), name="order"),
+    path("parts/", include(part_urls), name="part"),
 ]
 
 

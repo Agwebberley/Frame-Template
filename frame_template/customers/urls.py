@@ -7,6 +7,7 @@ from .views import (
     CustomerDeleteView,
 )
 
+app_name = "customers"
 
 urlpatterns = [
     path("list/", CustomerListView.as_view(), name="customer-list"),
@@ -15,4 +16,3 @@ urlpatterns = [
     path("delete/<int:pk>/", CustomerDeleteView.as_view(), name="customer-delete"),
     path("detail/<int:pk>/", CustomerDetailView.as_view(), name="customer-detail"),
 ]
-

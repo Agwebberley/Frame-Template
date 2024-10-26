@@ -89,13 +89,13 @@ THIRD_PARTY_APPS = [
 ]
 
 CUSTOM_APPS = [
-    "frame",
     "customers",
-    "inventory",
+    "part",
+    "order",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + CUSTOM_APPS
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + CUSTOM_APPS + ["frame"]
 
 # MIGRATIONS
 # ------------------------------------------------------------------------------
@@ -198,6 +198,7 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
                 "frame_template.users.context_processors.allauth_settings",
                 "frame.context_processors.cfg_version",
+                "frame.context_processors.current_app",
             ],
         },
     },

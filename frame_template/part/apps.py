@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class InventoryConfig(AppConfig):
+class PartConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "frame_template.inventory"
+    name = "frame_template.part"
